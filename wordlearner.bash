@@ -1,10 +1,11 @@
 correct=0
 total=0
+source languages.cfg
 while read line
 do
   let "total=$total+1"
   echo -en "\e[0K\r$total "
-  ./translate-shell/translate -s es -brief "$line"
+  ./translate-shell/translate -t "$native" -s "$learning" -brief "$line"
   read -r answer < /dev/tty
   echo -en "\e[2A"; echo -e "\e[0K\r$total $line"
   say -v Jorge "$line"
