@@ -1,1 +1,1 @@
-cat $1 | shuffle | head -10 | bash wordlearner.bash
+cat $1 | perl -MList::Util=shuffle -wne 'print shuffle <>;' | head -10 | bash wordlearner.bash
