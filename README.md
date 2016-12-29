@@ -27,6 +27,5 @@ First, you probably want to specify the language you want to practice. That's fi
 
 The above two lines would specify that you are english (EN - see [ISO country codes](http://www.nationsonline.org/oneworld/country_code_list.htm)) and that youa re learning french (FR).
 
-Now, to make your own list of keywords it's as simple as opening notepad and typing out a list of lines, with one word per line. You can have a look inside the [example keyword files folder](example-keyword-files).
-
+Now, to make your own list of keywords to practice is as simple as creating a text document with one word per line. Have a look at the examples.
 
