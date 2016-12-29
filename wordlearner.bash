@@ -4,7 +4,7 @@ while read line
 do
   let "total=$total+1"
   echo -en "\e[0K\r$total "
-  trans -s es -brief "$line"
+  ./translate-shell/translate -s es -brief "$line"
   read -r answer < /dev/tty
   echo -en "\e[2A"; echo -e "\e[0K\r$total $line"
   say -v Jorge "$line"
