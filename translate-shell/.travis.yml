@@ -1,0 +1,11 @@
+os:
+  - linux
+
+before_install: |
+  sudo add-apt-repository ppa:schot/gawk -y
+  sudo apt-get update -q
+  sudo apt-get install gawk
+  sudo apt-get install rlwrap
+  sudo apt-get install emacs
+
+script: make check
