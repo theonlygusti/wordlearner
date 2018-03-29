@@ -12,9 +12,6 @@ do
   say -v "${!learning}" "$line"
   if [ "$answer" == "$line" ]; then
     let "correct=$correct+1"
-    echo -en "\e[1A"; echo -e "\e[0K\rcorrect"
-  else
-    echo -en "\e[1A"; echo -e "\e[0K\rwrong"
   fi
   echo -en "\e[1A"; [ "$answer" == "$line" ] &&  echo -e "\e[0K\r$total $answer ✓" || echo -e "\e[0K\r$total $answer ✗"
 done
